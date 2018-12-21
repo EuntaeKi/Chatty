@@ -1,0 +1,157 @@
+/*
+    Color Choice for UI
+    / Peach: #fff2f0
+    / Gray: #7f7f7f
+    / Maroon: #8d6868
+*/
+
+.root {
+    -fx-border-width: 1.5;
+    -fx-border-color: #423630;
+}
+
+#navBar {
+    -fx-background-color: #423630;
+}
+
+.radio-button > .radio {
+    -fx-background-color: transparent;
+    -fx-background-inset: 0;
+    -fx-background-radious: 0;
+    -fx-padding: 0;
+    -fx-border-style: none;
+    -fx-border-width: 0;
+    -fx-border-insets: 0;
+}
+
+.radio-button:selected > .radio > .dot {
+    -fx-background-color: transparent;
+}
+
+.radio-button {
+    -fx-background-color:#423630;
+}
+
+.radio-button:hover {
+    -fx-opacity:0.6;
+}
+
+#friendListBtn {
+    -fx-background-image: url("../../../../ChattyGUI/src/GUI/img/nav_bar_image/friendIcon.png");
+    -fx-background-size: 20 auto;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+#friendListBtn:selected {
+    -fx-background-image: url("../../../../ChattyGUI/src/GUI/img/nav_bar_image/friendIcon_active.png");
+    -fx-background-size: 20 auto;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+#chatListBtn {
+     -fx-background-image: url("../../../../ChattyGUI/src/GUI/img/nav_bar_image/chatIcon.png");
+     -fx-background-size: 20 auto;
+     -fx-background-position: center;
+     -fx-background-repeat: no-repeat;
+ }
+
+#chatListBtn:selected {
+    -fx-background-image: url("../../../../ChattyGUI/src/GUI/img/nav_bar_image/chatIcon_active.png");
+    -fx-background-size: 20 auto;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+#settingBtn {
+     -fx-background-image: url("../../../../ChattyGUI/src/GUI/img/nav_bar_image/settingIcon.png");
+     -fx-background-size: 20 auto;
+     -fx-background-position: center;
+     -fx-background-repeat: no-repeat;
+ }
+
+#settingBtn:selected {
+    -fx-background-image: url("../../../../ChattyGUI/src/GUI/img/nav_bar_image/settingIcon_active.png");
+    -fx-background-size: 20 auto;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+#windowBar {
+    -fx-background-color: #423630;
+}
+
+#miniBtn {
+    -fx-background-image: url("../../../../ChattyGUI/src/GUI/img/window_bar_image/miniIcon.png");
+    -fx-background-position: center;
+    -fx-background-size: 10 auto;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: #423630;
+}
+
+#miniBtn:hover {
+    -fx-opacity:0.6;
+}
+
+#restoreBtn {
+    -fx-background-image:url("../../../../ChattyGUI/src/GUI/img/window_bar_image/restoreIcon.png");
+    -fx-background-position: center;
+    -fx-background-size: 10 auto;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: #423630;
+}
+
+#restoreBtn:hover {
+    -fx-opacity:0.6;
+}
+
+#closeBtn {
+    -fx-background-image: url("../../../../ChattyGUI/src/GUI/img/window_bar_image/exitIcon.png");
+    -fx-background-position: center;
+    -fx-background-size: 10 auto;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: #423630;
+}
+
+#closeBtn:hover {
+    -fx-opacity:0.6;
+}
+
+#label {
+    -fx-translate-y: 5;
+    -fx-translate-x: -50;
+    -fx-font-weight: bold;
+    -fx-font-size: 12;
+    -fx-text-fill: white;
+    -fx-text-alignment: left;
+}
+
+#loginPane {
+    -fx-background-color:#423630;
+}
+
+#friendListPane {
+    -fx-background-color:#ffffff;
+}
+
+#chatListPane {
+    -fx-background-color:#ffffff;
+}
+
+#settingPane {
+    -fx-background-color:#ffffff;
+}
+
+#idField {
+    -fx-margin: 50;
+}
+
+#pwField {
+    -fx-margin: 50;
+}
+
+#loginBtn {
+    -fx-text-fill:#7f7f7f;
+    -fx-background-color:#fff2f0;
+}

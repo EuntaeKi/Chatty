@@ -1,0 +1,68 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane fx:id="root" fx:controller="Controller" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <ToolBar fx:id="windowBar" prefHeight="25" minHeight="25" maxHeight="25">
+            <Pane HBox.hgrow = "ALWAYS" />
+            <HBox fx:id="windowBox">
+                <children>
+                    <Label fx:id="label" text="Coco"/>
+                    <Region prefWidth="150" HBox.hgrow ="ALWAYS"/>
+                    <Button fx:id="miniBtn"/>
+                    <Button fx:id="restoreBtn"/>
+                    <Button fx:id="closeBtn"/>
+                </children>
+            </HBox>
+        </ToolBar>
+    </top>
+    <center>
+        <StackPane fx:id="allPane">
+            <children>
+                <BorderPane fx:id="loginPane">
+                   <center>
+                        <VBox alignment="CENTER" spacing="5">
+                            <ImageView fx:id="logo" fitWidth="200" fitHeight="200" preserveRatio="true"/>
+                            <Region prefHeight="25"/>
+                            <TextField fx:id="idField" maxWidth="150" prefHeight="30"/>
+                            <PasswordField fx:id="pwField" maxWidth="150" prefHeight="30"/>
+                            <Region prefHeight="10"/>
+                            <Button fx:id="loginBtn" prefWidth="60" prefHeight="30" text="Login"/>
+                            <Label fx:id="loginFail" text="" textFill="white" alignment="CENTER"/>
+                            <VBox fx:id="loginFailBox"/>
+                        </VBox>
+                   </center>
+                </BorderPane>
+                <BorderPane fx:id="backbone">
+                    <top>
+                        <HBox fx:id = "navBar" minHeight="50">
+                            <fx:define>
+                                <ToggleGroup fx:id="groupedBtn"/>
+                            </fx:define>
+                            <RadioButton fx:id = "friendListBtn" minWidth="75" minHeight="48" styleClass="toggle-button" toggleGroup="$groupedBtn"/>
+                            <RadioButton fx:id = "chatListBtn" minWidth="75" minHeight="48" styleClass="toggle-button" toggleGroup="$groupedBtn"/>
+                            <RadioButton fx:id = "settingBtn" minWidth="75" minHeight="48" styleClass="toggle-button" toggleGroup="$groupedBtn"/>
+                        </HBox>
+                    </top>
+                    <center>
+                        <StackPane fx:id="outline">
+                            <children>
+                                <BorderPane fx:id="friendListPane">
+                                    <top>
+                                            <Label fx:id="friendLabel">Friend List</Label>
+                                    </top>
+                                    <center>
+                                        <VBox fx:id="friendBox"/>
+                                    </center>
+                                </BorderPane>
+                                <BorderPane fx:id="chatListPane"/>
+                                <BorderPane fx:id="settingPane"/>
+                            </children>
+                        </StackPane>
+                    </center>
+                </BorderPane>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>
