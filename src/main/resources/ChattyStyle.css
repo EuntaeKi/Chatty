@@ -7,11 +7,11 @@
 
 .root {
     -fx-border-width: 1.5;
-    -fx-border-color: #423630;
+    -fx-border-color: #8d6868;
 }
 
 #navBar {
-    -fx-background-color: #423630;
+    -fx-background-color: #8d6868;
 }
 
 .radio-button > .radio {
@@ -29,7 +29,7 @@
 }
 
 .radio-button {
-    -fx-background-color:#423630;
+    -fx-background-color:#8d6868;
 }
 
 .radio-button:hover {
@@ -79,7 +79,7 @@
 }
 
 #windowBar {
-    -fx-background-color: #423630;
+    -fx-background-color: #8d6868;
 }
 
 #miniBtn {
@@ -87,7 +87,7 @@
     -fx-background-position: center;
     -fx-background-size: 10 auto;
     -fx-background-repeat: no-repeat;
-    -fx-background-color: #423630;
+    -fx-background-color: #8d6868;
 }
 
 #miniBtn:hover {
@@ -99,7 +99,7 @@
     -fx-background-position: center;
     -fx-background-size: 10 auto;
     -fx-background-repeat: no-repeat;
-    -fx-background-color: #423630;
+    -fx-background-color: #8d6868;
 }
 
 #restoreBtn:hover {
@@ -111,7 +111,7 @@
     -fx-background-position: center;
     -fx-background-size: 10 auto;
     -fx-background-repeat: no-repeat;
-    -fx-background-color: #423630;
+    -fx-background-color: #8d6868;
 }
 
 #closeBtn:hover {
@@ -128,7 +128,7 @@
 }
 
 #loginPane {
-    -fx-background-color:#423630;
+    -fx-background-color:#8d6868;
 }
 
 #friendListPane {
@@ -136,11 +136,11 @@
 }
 
 #chatListPane {
-    -fx-background-color:#ffffff;
+    -fx-background-color:#fff2f0;
 }
 
 #settingPane {
-    -fx-background-color:#ffffff;
+    -fx-background-color:#fff2f0;
 }
 
 #idField {
@@ -151,6 +151,8 @@
     -fx-start-margin: auto;
     -fx-end-margin: auto;
     -fx-background-radius: 5 5 0 0;
+    -fx-font-family: "Tahoma";
+    -fx-alignment: center;
 }
 
 #pwField {
@@ -161,11 +163,23 @@
     -fx-start-margin: auto;
     -fx-end-margin: auto;
     -fx-background-radius: 0 0 5 5;
+    -fx-alignment: center;
+}
+
+#idField.fail {
+    -fx-text-box-border: red;
+    -fx-focus-color: red;
+}
+
+#pwField.fail {
+    -fx-text-box-border: red;
+    -fx-focus-color: red;
 }
 
 #loginBtn {
     -fx-text-fill:#7f7f7f;
     -fx-background-color:#fff2f0;
+    -fx-font-weight: bold;
 }
 
 #friendLabel {
